@@ -1,6 +1,7 @@
 package homework2;
 import java.util.Scanner;
 public class printGreatestNumber {
+
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -30,18 +31,21 @@ public class printGreatestNumber {
 				// TODO Auto-generated method stub
 		int d = 0;
 		int max=d;
-		if(n1>n2)
+		if(n1>n2) {
 			 if (n1>n3)
 				max = n1;
-	    else if (n2>n3)
-			 if (n2>n1)
+		}
+			 else  if (n2>n3) {
+			   if (n2>n1)
 				max = n2;
-			if (n3>n1)
+			 }
+			 else if (n3>n1) {
 				if (n3>n2)
 				max= n3;
+			 }
 		return max;
-	}
-	
-}
+
+		}	}
+
 	
 
